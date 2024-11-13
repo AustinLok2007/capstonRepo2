@@ -53,8 +53,6 @@ public class MultithreadedCounter {
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
 
-        executorService.shutdown();
-
         System.out.println("Total count across all threads: " + totalSum);
         System.out.println("Time taken: " + duration + " milliseconds");
     }
